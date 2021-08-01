@@ -1,0 +1,46 @@
+---
+description: 'A Bloc component.'
+labels: ['react', 'typescript', 'base']
+---
+
+import { Bloc } from './bloc';
+
+## React Component for rendering text
+
+A basic div that renders some text
+
+### Component usage
+```js
+<Bloc 
+  id="basicBloc"
+  componentMapperIdentifier="basicBloc"
+  props={{unmappedContent: 'hi I am unmapped content' }}
+  componentMappers={
+    {
+      basicBloc: {
+        component: ({contents}) => <div>{contents}</div>, 
+        mapper: (props) =>({contents: props.unmappedContent.replace('unmapped', 'mapped')})
+      }
+    }
+  }
+/>
+```
+
+### Using props to customize the text
+
+Modify the text to see it change live:
+```js live
+<Bloc 
+  id="basicBloc"
+  componentMapperIdentifier="basicBloc"
+  props={{unmappedContent: 'hi I am unmapped content' }}
+  componentMappers={
+    {
+      basicBloc: {
+        component: ({contents}) => <div>{contents}</div>, 
+        mapper: (props) =>({contents: props.unmappedContent.replace('unmapped', 'mapped')})
+      }
+    }
+  }
+/>
+```

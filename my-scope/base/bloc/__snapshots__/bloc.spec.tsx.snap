@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BLoc component doesn't exists 1`] = `
+<div>
+  <div>
+    The component 
+    componentThatDoesNotExists
+     has not been created yet.
+  </div>
+</div>
+`;
+
+exports[`BLoc component without props 1`] = `
+<div>
+  <div>
+    Test with no props
+  </div>
+</div>
+`;
+
+exports[`Bloc component with props 1`] = `
+<div>
+  <div>
+    I am a component with props. That doesn't use a mapper
+  </div>
+</div>
+`;
+
+exports[`Bloc component with props to be mapped 1`] = `
+<div>
+  <div>
+    Altered I am a component with props. That that will be mapped
+  </div>
+</div>
+`;
+
+exports[`Bloc with component coming from BlocContext 1`] = `
+<div>
+  <div>
+    context : I am a component that is a part of the global context.
+  </div>
+</div>
+`;
+
+exports[`No component mappers secified 1`] = `
+<div>
+  <div>
+    The component 
+    componentFromContext
+     has not been created yet.
+  </div>
+</div>
+`;
